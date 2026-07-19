@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* "Dürüst Atölye" paleti */
+  --color-steel-950: #15181c;
+  --color-steel-900: #1d2126;
+  --color-steel-800: #2a2f36;
+  --color-steel-700: #3a414a;
+  --color-steel-400: #8b939e;
+  --color-steel-100: #e8eaed;
+  --color-amber-500: #ff9f1c;
+  --color-amber-300: #ffd166;
+  --color-paper: #f3efe7;
+  --color-paper-dark: #e6e0d2;
+  --color-ink: #23272e;
+
+  --font-display: var(--font-archivo);
+  --font-sans: var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-steel-950);
+  color: var(--color-steel-100);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tabular rakamlar: fiyat, süre, fiş no */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* İş emri fişi: perfore üst kenar (saf CSS delikler) */
+.fis-perfore {
+  --hole: 10px;
+  -webkit-mask-image: radial-gradient(
+      circle at 50% 0,
+      transparent calc(var(--hole) / 2),
+      #000 calc(var(--hole) / 2 + 0.5px)
+    );
+  -webkit-mask-size: calc(var(--hole) * 2.4) 100%;
+  -webkit-mask-repeat: repeat-x;
+  mask-image: radial-gradient(
+    circle at 50% 0,
+    transparent calc(var(--hole) / 2),
+    #000 calc(var(--hole) / 2 + 0.5px)
+  );
+  mask-size: calc(var(--hole) * 2.4) 100%;
+  mask-repeat: repeat-x;
+}
+
+/* Damga rozeti hafif dönük */
+.damga {
+  transform: rotate(-6deg);
+}
+
+/* Servis hattı çizgisi — tek orkestre animasyon */
+@keyframes servis-hatti {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.servis-hatti path {
+  stroke-dasharray: 1000;
+  animation: servis-hatti 1.6s ease-out forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .servis-hatti path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Görünür focus — erişilebilirlik */
+:focus-visible {
+  outline: 2px solid var(--color-amber-500);
+  outline-offset: 2px;
+}
+
+/* Metin seçimi marka renginde */
+::selection {
+  background: var(--color-amber-500);
+  color: var(--color-steel-950);
+}
+
+/* Hazard şeridi — atölye bandı imzası (header üstü, CTA kenarı) */
+.hazard {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-amber-500) 0 12px,
+    var(--color-steel-950) 12px 24px
+  );
+}
+
+/* Hero teknik ızgara zemini — çok düşük kontrast, LCP'ye etkisiz saf CSS */
+.hero-grid {
+  background-image:
+    radial-gradient(
+      ellipse 80% 60% at 20% 0%,
+      rgba(255, 159, 28, 0.07),
+      transparent 60%
+    ),
+    linear-gradient(rgba(139, 147, 158, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 147, 158, 0.05) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    48px 48px,
+    48px 48px;
+}
+
+/* Fiş kartı: hafif kağıt dokusu + hover kaldırma */
+.fis-kagit {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(35, 39, 46, 0.025) 0 1px,
+    transparent 1px 28px
+  );
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.fis-kagit:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.55);
+}
+@media (prefers-reduced-motion: reduce) {
+  .fis-kagit,
+  .fis-kagit:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Mobil aksiyon çubuğu: iPhone home-bar güvenli alanı */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
 }
