@@ -36,6 +36,7 @@ export default function HizmetlerPage() {
             title={s.name}
             text={s.intro.split(".")[0] + "."}
             href={`/hizmetler/${s.slug}`}
+            iconSlug={s.slug}
           />
         ))}
       </div>

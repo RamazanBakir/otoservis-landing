@@ -5,6 +5,7 @@ import { services } from "@/lib/services";
 import { districts } from "@/lib/districts";
 import { blogPosts } from "@/lib/blog";
 import { FisCard } from "@/components/FisCard";
+import { HeroIllustration } from "@/components/HeroIllustration";
 import { TrustStrip } from "@/components/TrustStrip";
 import { ServiceLine } from "@/components/ServiceLine";
 import { CtaBlock } from "@/components/CtaBlock";
@@ -54,6 +55,8 @@ export default function HomePage() {
       {/* Hero — tez cümlesi */}
       <section className="hero-grid">
       <div className="mx-auto max-w-6xl px-4 pb-12 pt-14 sm:pt-20">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div>
         <p className="font-display text-sm font-bold uppercase tracking-widest text-amber-500">
           Muğla Sanayi Sitesi · Menteşe
         </p>
@@ -82,6 +85,12 @@ export default function HomePage() {
           >
             WhatsApp
           </a>
+        </div>
+
+        </div>
+
+        {/* Teknik çizim: lift üzerinde araç — inline SVG, istek yok */}
+        <HeroIllustration className="hidden w-full max-w-lg justify-self-center lg:block" />
         </div>
 
         {/* Stat bandı — endüstriyel tabular rakamlar */}
@@ -129,6 +138,7 @@ export default function HomePage() {
               title={s.name}
               text={s.intro.split(".")[0] + "."}
               href={`/hizmetler/${s.slug}`}
+              iconSlug={s.slug}
             />
           ))}
         </div>

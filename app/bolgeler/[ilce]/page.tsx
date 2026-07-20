@@ -10,6 +10,7 @@ import { SchemaScript } from "@/components/SchemaScript";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection } from "@/components/FaqSection";
 import { CtaBlock } from "@/components/CtaBlock";
+import { ServiceIcon } from "@/components/ServiceIcon";
 
 export const dynamicParams = false;
 
@@ -118,8 +119,11 @@ export default async function DistrictPage({
             <li key={s.slug}>
               <Link
                 href={`/hizmetler/${s.slug}`}
-                className="block h-full rounded border border-steel-800 p-4 text-sm font-semibold text-steel-100 transition-colors hover:border-amber-500"
+                className="flex h-full items-center gap-3 rounded border border-steel-800 p-4 text-sm font-semibold text-steel-100 transition-colors hover:border-amber-500"
               >
+                <span className="shrink-0 text-amber-500">
+                  <ServiceIcon slug={s.slug} size={22} />
+                </span>
                 {s.name}
               </Link>
             </li>

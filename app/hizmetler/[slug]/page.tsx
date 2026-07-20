@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection } from "@/components/FaqSection";
 import { CtaBlock } from "@/components/CtaBlock";
 import { TrustStrip } from "@/components/TrustStrip";
+import { ServiceIcon } from "@/components/ServiceIcon";
 
 export const dynamicParams = false;
 
@@ -58,6 +59,9 @@ export default async function ServicePage({
       />
 
       <header>
+        <span className="mb-4 inline-flex rounded border border-steel-800 bg-steel-900 p-3 text-amber-500">
+          <ServiceIcon slug={service.slug} size={32} />
+        </span>
         <p className="font-display text-xs font-bold uppercase tracking-widest text-amber-500">
           Hizmet · İş Emri Açılır
         </p>

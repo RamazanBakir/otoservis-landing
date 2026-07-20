@@ -1,20 +1,23 @@
 import Link from "next/link";
 import { site } from "@/lib/site-config";
+import { ServiceIcon } from "./ServiceIcon";
 
 /**
  * İmza öğesi: hizmet kartı "iş emri fişi" gibi — perfore üst kenar,
- * fiş numarası, damga rozeti, alt tıkla-ara şeridi.
+ * fiş numarası, hizmet ikonu, damga rozeti, alt tıkla-ara şeridi.
  */
 export function FisCard({
   no,
   title,
   text,
   href,
+  iconSlug,
 }: {
   no: number;
   title: string;
   text: string;
   href: string;
+  iconSlug?: string;
 }) {
   return (
     <article className="fis-perfore fis-kagit relative flex flex-col bg-paper text-ink shadow-lg">
@@ -30,11 +33,18 @@ export function FisCard({
         </span>
       </div>
 
-      <h3 className="px-5 pt-2 font-display text-xl font-bold uppercase leading-tight">
-        <Link href={href} className="hover:text-amber-500">
-          {title}
-        </Link>
-      </h3>
+      <div className="flex items-start gap-3 px-5 pt-2">
+        {iconSlug && (
+          <span className="mt-0.5 shrink-0 rounded border border-ink/15 bg-ink/5 p-2 text-amber-500">
+            <ServiceIcon slug={iconSlug} size={24} />
+          </span>
+        )}
+        <h3 className="font-display text-xl font-bold uppercase leading-tight">
+          <Link href={href} className="hover:text-amber-500">
+            {title}
+          </Link>
+        </h3>
+      </div>
 
       <p className="flex-1 px-5 pb-5 pt-2 text-sm leading-relaxed text-ink/70">{text}</p>
 
