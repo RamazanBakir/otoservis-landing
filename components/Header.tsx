@@ -18,7 +18,7 @@ export function Header() {
       {/* Hazard şeridi — imza aksan */}
       <div aria-hidden className="hazard h-1" />
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
-        <Link href="/" className="flex items-baseline gap-2" aria-label="Muğla Tamirci ana sayfa">
+        <Link href="/" className="flex items-baseline gap-2">
           <span className="font-display text-xl font-bold uppercase tracking-tight text-steel-100">
             Muğla<span className="text-amber-500">Tamirci</span>
           </span>

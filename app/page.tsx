@@ -10,6 +10,8 @@ import { TrustStrip } from "@/components/TrustStrip";
 import { ServiceLine } from "@/components/ServiceLine";
 import { CtaBlock } from "@/components/CtaBlock";
 import { FaqSection } from "@/components/FaqSection";
+import { SchemaScript } from "@/components/SchemaScript";
+import { autoRepairSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -45,6 +47,7 @@ const homeFaqs = [
 export default function HomePage() {
   return (
     <>
+      <SchemaScript data={autoRepairSchema()} />
       {/* Sezon bandı — içerik site-config'ten */}
       {site.seasonBanner.active && (
         <p className="border-b border-amber-500/30 bg-amber-500/10 px-4 py-2 text-center text-sm text-amber-300">

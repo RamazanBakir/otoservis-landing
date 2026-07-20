@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     title: "Araç Muayenesinden Kalmamak İçin Kontrol Edilmesi Gereken 12 Nokta",
     metaTitle: "Muayeneden Kalmamak İçin 12 Kontrol Noktası",
     description:
-      "TÜVTÜRK muayenesinden kalmamak için ustanın kontrol listesi: fren, far, lastik, emisyon ve daha fazlası. Muayene öncesi hazırlık rehberi.",
+      "TÜVTÜRK muayenesinden kalmamak için ustanın 12 maddelik kontrol listesi: fren, far, lastik, emisyon ve alt takım. Muayene öncesi hazırlık rehberi.",
     keyword: "muayeneden kalmamak",
     date: "2026-05-12",
     full: true,
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     title: "Oto Klima Soğutmuyor: Nedenleri ve Çözümleri",
     metaTitle: "Oto Klima Soğutmuyor — Nedenleri ve Çözümü",
     description:
-      "Klima neden soğutmaz? Gaz kaçağı, kompresör, kondanser ve filtre sorunları; belirtileri ve çözümleri. Muğla sıcağı için usta anlatımıyla.",
+      "Klima neden soğutmaz? Gaz kaçağı, kompresör, kondanser ve polen filtresi sorunları; belirtileri ve çözümleri. Muğla sıcağı için usta anlatımı.",
     keyword: "oto klima soğutmuyor",
     date: "2026-06-18",
     full: true,
@@ -180,7 +180,7 @@ export const blogPosts: BlogPost[] = [
     title: "Periyodik Bakımda Neler Yapılır? Km Bakım Tablosu",
     metaTitle: "Periyodik Bakımda Neler Yapılır? Km Tablosu",
     description:
-      "Periyodik bakım kalemleri km km: 10 binde ne değişir, 60 binde ne kontrol edilir? Usta anlatımıyla bakım tablosu rehberi.",
+      "Periyodik bakım kalemleri km km: 10 binde ne değişir, 60 binde ne kontrol edilir? Dizel, benzinli ve LPG farklarıyla usta anlatımlı bakım tablosu.",
     keyword: "periyodik bakımda neler yapılır",
     date: "2026-04-20",
     full: true,
@@ -238,7 +238,7 @@ export const blogPosts: BlogPost[] = [
     title: "Triger Kayışı Ne Zaman Değişmeli? İhmal Edilirse Ne Olur?",
     metaTitle: "Triger Kayışı Ne Zaman Değişmeli?",
     description:
-      "Triger kayışı değişim zamanı: km ve yıl kriterleri, kopma riski, set halinde değişimin nedeni. İhmalin bedeli motor revizyonudur.",
+      "Triger kayışı değişim zamanı: km ve yıl kriterleri, kopma riski ve set halinde değişimin nedeni. İhmalin bedeli motor revizyonudur — rehberi okuyun.",
     keyword: "triger kayışı ne zaman değişmeli",
     date: "2026-03-15",
     full: true,
@@ -289,7 +289,7 @@ export const blogPosts: BlogPost[] = [
     title: "Muğla Oto Sanayi Nerede? Ulaşım ve Servis Rehberi",
     metaTitle: "Muğla Oto Sanayi Nerede? Ulaşım Rehberi",
     description:
-      "Muğla Sanayi Sitesi nerede, nasıl gidilir? Menteşe'deki oto sanayiye ilçelerden ulaşım, çalışma saatleri ve servis rehberi.",
+      "Muğla Sanayi Sitesi nerede, nasıl gidilir? Menteşe'deki oto sanayiye ilçelerden ulaşım süreleri, usta seçme ölçütleri ve servis rehberi bir arada.",
     keyword: "muğla oto sanayi",
     date: "2026-02-10",
     full: true,
@@ -337,7 +337,7 @@ export const blogPosts: BlogPost[] = [
       "Yokuş ve Virajlı Yollarda Fren Sağlığı: Muğla-Marmaris ve Sakar Geçidi Örneği",
     metaTitle: "Virajlı Yolda Fren Sağlığı — Sakar Geçidi",
     description:
-      "Sakar Geçidi ve Muğla-Marmaris yolunda fren güvenliği: balata ısınması, hidrolik kaynaması, motor freni tekniği. Usta tavsiyeleri.",
+      "Sakar Geçidi ve Muğla-Marmaris yolunda fren güvenliği: balata ısınması, hidrolik kaynaması ve motor freni tekniği. Usta tavsiyeleriyle tam rehber.",
     keyword: "yokuşta fren güvenliği",
     date: "2026-05-28",
     full: true,
@@ -391,7 +391,7 @@ export const blogPosts: BlogPost[] = [
     title: "Kiralık Araçta Arıza Çıkarsa Ne Yapmalı?",
     metaTitle: "Kiralık Araçta Arıza Çıkarsa Ne Yapmalı?",
     description:
-      "Kiralık araç yolda arıza yaptı: kime haber verilir, masrafı kim öder, tutanak nasıl tutulur? Turistler ve kiracılar için pratik rehber.",
+      "Kiralık araç yolda arıza yaptı: kime haber verilir, masrafı kim öder, onay süreci nasıl işler? Turistler ve kiracılar için adım adım pratik rehber.",
     keyword: "kiralık araç arıza",
     date: "2026-06-25",
     full: true,
@@ -442,7 +442,7 @@ export const blogPosts: BlogPost[] = [
     title: "Motor Yağı Seçimi: Hangi Araca Hangi Yağ?",
     metaTitle: "Motor Yağı Seçimi — Hangi Araca Hangi Yağ?",
     description:
-      "5W-30 mu 10W-40 mı? Viskozite, üretici onay normları (ACEA, API) ve doğru motor yağı seçimi usta anlatımıyla.",
+      "5W-30 mu 10W-40 mı? Viskozite kodları, üretici onay normları (ACEA, VW, MB) ve doğru motor yağı seçimi — LPG ve yaşlı motor notlarıyla usta rehberi.",
     keyword: "motor yağı seçimi",
     date: "2026-03-30",
     full: true,
@@ -494,7 +494,7 @@ export const blogPosts: BlogPost[] = [
     title: "Kışın Muğla'da Araç Bakımı: Nem ve Yağmur Koşulları",
     metaTitle: "Kışın Muğla'da Araç Bakımı — Nem ve Yağmur",
     description:
-      "Muğla kışı kar değil nem ve yağmur demek: akü, silecek, lastik ve elektrik aksamı için kış bakım rehberi.",
+      "Muğla kışı kar değil nem ve yağmur demek: akü testi, buğu çözümü, silecek ve elektrik aksamı için bölgeye özel kış bakım rehberi usta anlatımıyla.",
     keyword: "kışın araç bakımı",
     date: "2026-01-15",
     full: true,
@@ -545,7 +545,7 @@ export const blogPosts: BlogPost[] = [
     title: "Uzun Yol Öncesi Bakım: Yola Çıkmadan Son 24 Saat",
     metaTitle: "Uzun Yol Öncesi Bakım Kontrol Listesi",
     description:
-      "Uzun yola çıkmadan son 24 saatte yapılacak kontroller: sıvılar, lastik, fren, aydınlatma. Pratik kontrol listesi.",
+      "Uzun yola çıkmadan son 24 saatte yapılacak kontroller: sıvılar, lastik basıncı, fren ve aydınlatma. Dalaman transfer notuyla pratik kontrol listesi.",
     keyword: "uzun yol öncesi bakım",
     date: "2026-04-05",
     full: true,

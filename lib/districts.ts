@@ -31,7 +31,7 @@ export const districts: District[] = [
     name: "Menteşe",
     title: "Menteşe Oto Tamir ve Servis",
     description:
-      "Menteşe'de oto tamir: Muğla Sanayi Sitesi'ndeki atölyemiz merkeze 5 dk. Bakım, arıza, elektrik tek adreste. Randevu: 0507 921 33 88.",
+      "Menteşe'de oto tamir: Muğla Sanayi Sitesi'ndeki atölyemiz merkeze 5 dk. Bakım, arıza tespiti ve elektrik tek adreste. Randevu için: 0507 921 33 88.",
     h1: "Menteşe'de Oto Tamir ve Servis — Sanayi Sitesindeki Atölyeniz",
     keyword: "menteşe oto tamir",
     ulasim: {
@@ -69,7 +69,7 @@ export const districts: District[] = [
     name: "Yatağan",
     title: "Yatağan Oto Tamir ve Servis",
     description:
-      "Yatağan'dan D330 ile 25 dk: ticari araç, kamyonet ve binek tamiri Muğla Sanayi'de. Önce fiyat sonra işlem. Arayın: 0507 921 33 88.",
+      "Yatağan'dan D330 ile 25 dk: ticari araç, kamyonet ve binek tamiri Muğla Sanayi'de. Önce fiyat sonra işlem, parçanız hazır olur. Arayın: 0507 921 33 88.",
     h1: "Yatağan'dan Gelenler İçin Oto Tamir ve Servis",
     keyword: "yatağan oto tamir",
     ulasim: {
@@ -107,7 +107,7 @@ export const districts: District[] = [
     name: "Ula",
     title: "Ula Oto Tamir ve Servis",
     description:
-      "Ula'dan D400 ile 20 dk: fren, rampa yükü ve bakım işleri Muğla Sanayi'deki atölyemizde. Değişen parça gösterilir. Tel: 0507 921 33 88.",
+      "Ula'dan D400 ile 20 dk: fren, rampa yükü ve bakım işleri Muğla Sanayi'deki atölyemizde. Değişen parça size gösterilir. Randevu için: 0507 921 33 88.",
     h1: "Ula'dan Gelenler İçin Oto Tamir ve Servis",
     keyword: "ula oto tamir",
     ulasim: {
@@ -145,7 +145,7 @@ export const districts: District[] = [
     name: "Kavaklıdere",
     title: "Kavaklıdere Oto Tamir ve Servis",
     description:
-      "Kavaklıdere'den ~45 dk: dağ yolu kullanan araçlarda fren, süspansiyon ve bakım işleri. Muğla Sanayi'deyiz. Tel: 0507 921 33 88.",
+      "Kavaklıdere'den ~45 dk: dağ yolu kullanan araçlarda fren, süspansiyon ve bakım işleri. Telefonla ön teşhis, parça ön hazırlığı bizde: 0507 921 33 88.",
     h1: "Kavaklıdere'den Gelenler İçin Oto Tamir ve Servis",
     keyword: "kavaklıdere oto tamir",
     ulasim: {
@@ -185,7 +185,7 @@ export const districts: District[] = [
     name: "Milas",
     title: "Milas Oto Tamir ve Servis",
     description:
-      "Milas'tan Muğla-Milas yolu ile ~50 dk: motor, şanzıman ve elektronik arızada uzman atölye. Önce fiyat sonra işlem. Tel: 0507 921 33 88.",
+      "Milas'tan Muğla-Milas yolu ile ~50 dk: motor, şanzıman ve elektronik arızada uzman atölye. Önce fiyat sonra işlem, yazılı rapor. Tel: 0507 921 33 88.",
     h1: "Milas'tan Gelenler İçin Oto Tamir ve Servis",
     keyword: "milas oto tamir",
     ulasim: {
@@ -225,7 +225,7 @@ export const districts: District[] = [
     name: "Bodrum",
     title: "Bodrum Oto Tamir — Muğla'da Servis",
     description:
-      "Bodrum'dan ~1 s 45 dk: sezon yoğunluğunda sıra beklemeden motor, şanzıman ve elektronik arıza çözümü. Tel: 0507 921 33 88.",
+      "Bodrum'dan ~1 s 45 dk: sezon yoğunluğunda sıra beklemeden motor, şanzıman ve elektronik arıza çözümü. Randevu ve parça ön hazırlığı: 0507 921 33 88.",
     h1: "Bodrum'dan Gelenler İçin Oto Tamir ve Servis",
     keyword: "bodrum oto tamir",
     ulasim: {
@@ -269,7 +269,7 @@ export const districts: District[] = [
     name: "Marmaris",
     title: "Marmaris Oto Tamir — Muğla'da Servis",
     description:
-      "Marmaris'ten Sakar Geçidi ile ~55 dk: fren, klima ve büyük onarımlarda Muğla Sanayi'deki atölyeniz. Tel: 0507 921 33 88.",
+      "Marmaris'ten Sakar Geçidi ile ~55 dk: fren, klima ve büyük onarımlarda Muğla Sanayi'deki atölyeniz. Aynı gün dönüş planı için arayın: 0507 921 33 88.",
     h1: "Marmaris'ten Gelenler İçin Oto Tamir ve Servis",
     keyword: "marmaris oto tamir",
     ulasim: {
@@ -309,7 +309,7 @@ export const districts: District[] = [
     name: "Fethiye",
     title: "Fethiye Oto Tamir — Muğla'da Servis",
     description:
-      "Fethiye'den D400 ile ~2 saat: motor revizyonu, şanzıman ve kronik arızalarda ikinci görüş adresi. Tel: 0507 921 33 88.",
+      "Fethiye'den D400 ile ~2 saat: motor revizyonu, şanzıman ve kronik arızalarda ikinci görüş adresi. Yazılı tespit raporu verilir. Tel: 0507 921 33 88.",
     h1: "Fethiye'den Gelenler İçin Oto Tamir ve Servis",
     keyword: "fethiye oto tamir",
     ulasim: {
@@ -349,7 +349,7 @@ export const districts: District[] = [
     name: "Seydikemer",
     title: "Seydikemer Oto Tamir — Muğla'da Servis",
     description:
-      "Seydikemer'den ~2 s 15 dk: tarım aracı, pikap ve arazi araçlarında alt takım ve motor işleri. Tel: 0507 921 33 88.",
+      "Seydikemer'den ~2 s 15 dk: tarım aracı, pikap ve arazi araçlarında alt takım, debriyaj ve motor işleri tek seferde biter. Tel: 0507 921 33 88.",
     h1: "Seydikemer'den Gelenler İçin Oto Tamir ve Servis",
     keyword: "seydikemer oto tamir",
     ulasim: {
@@ -389,7 +389,7 @@ export const districts: District[] = [
     name: "Ortaca",
     title: "Ortaca Oto Tamir ve Servis",
     description:
-      "Ortaca'dan D400 ile ~1 s 10 dk: uzun yol öncesi kontrol, bakım ve arıza işleri Muğla Sanayi'de. Tel: 0507 921 33 88.",
+      "Ortaca'dan D400 ile ~1 s 10 dk: uzun yol öncesi kontrol, bakım ve arıza işleri Muğla Sanayi'de. Randevuyla sıra beklemezsiniz. Tel: 0507 921 33 88.",
     h1: "Ortaca'dan Gelenler İçin Oto Tamir ve Servis",
     keyword: "ortaca oto tamir",
     ulasim: {
@@ -427,7 +427,7 @@ export const districts: District[] = [
     name: "Dalaman",
     title: "Dalaman Oto Tamir ve Servis",
     description:
-      "Dalaman'dan D400 ile ~1 s 20 dk: havalimanı transfer araçları ve uzun yol öncesi kontrollerde atölyeniz. Tel: 0507 921 33 88.",
+      "Dalaman'dan D400 ile ~1 s 20 dk: havalimanı transfer araçları ve uzun yol öncesi kontrollerde atölyeniz. Ticari araca öncelik. Tel: 0507 921 33 88.",
     h1: "Dalaman'dan Gelenler İçin Oto Tamir ve Servis",
     keyword: "dalaman oto tamir",
     ulasim: {
@@ -465,7 +465,7 @@ export const districts: District[] = [
     name: "Köyceğiz",
     title: "Köyceğiz Oto Tamir ve Servis",
     description:
-      "Köyceğiz'den D400 ile ~50 dk: bakım, fren ve arıza işleri Muğla Sanayi'deki atölyemizde. Değişen parça gösterilir. Tel: 0507 921 33 88.",
+      "Köyceğiz'den D400 ile ~50 dk: bakım, fren ve nem kaynaklı elektrik arızaları Muğla Sanayi'deki atölyemizde. Parça gösterilir. Tel: 0507 921 33 88.",
     h1: "Köyceğiz'den Gelenler İçin Oto Tamir ve Servis",
     keyword: "köyceğiz oto tamir",
     ulasim: {
@@ -503,7 +503,7 @@ export const districts: District[] = [
     name: "Datça",
     title: "Datça Oto Tamir — Muğla'da Servis",
     description:
-      "Datça'dan ~2 saat: yarımada koşullarında yıpranan araçlar için büyük bakım ve onarım adresi. Tel: 0507 921 33 88.",
+      "Datça'dan ~2 saat: yarımada koşullarında yıpranan araçlar için büyük bakım ve onarım adresi. Tek gelişte maksimum iş planlanır. Tel: 0507 921 33 88.",
     h1: "Datça'dan Gelenler İçin Oto Tamir ve Servis",
     keyword: "datça oto tamir",
     ulasim: {

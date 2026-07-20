@@ -181,7 +181,7 @@ export const services: Service[] = [
     name: "Oto Klima Bakım ve Gaz Dolumu",
     title: "Muğla Oto Klima Bakımı ve Gaz Dolumu",
     description:
-      "Muğla sıcağında klima şart: gaz dolumu, kaçak testi, kompresör tamiri, kötü koku çözümü. Aynı gün hizmet için arayın: 0507 921 33 88.",
+      "Muğla sıcağında klima şart: gaz dolumu, kaçak testi, kompresör tamiri ve koku çözümü tek adreste. Aynı gün hizmet için hemen arayın: 0507 921 33 88.",
     h1: "Muğla'da Oto Klima Bakım, Tamir ve Gaz Dolumu",
     keyword: "muğla oto klima",
     intro:
@@ -219,7 +219,7 @@ export const services: Service[] = [
     name: "Triger Seti Değişimi",
     title: "Muğla Triger Seti ve Kayış Değişimi",
     description:
-      "Muğla'da triger seti değişimi: kayış, gergi, devirdaim tek pakette. Triger ihmali motoru yatırır — km'niz geldiyse arayın: 0507 921 33 88.",
+      "Muğla'da triger seti değişimi: kayış, gergi ve devirdaim tek pakette. Triger ihmali motoru yatırır — km'niz dolduysa bekletmeden arayın: 0507 921 33 88.",
     h1: "Muğla'da Triger Seti ve Kayış Değişimi",
     keyword: "muğla triger değişimi",
     intro:
@@ -257,7 +257,7 @@ export const services: Service[] = [
     name: "Şanzıman ve Debriyaj",
     title: "Muğla Şanzıman ve Debriyaj Tamiri",
     description:
-      "Muğla'da şanzıman tamiri ve debriyaj değişimi: vites geçmiyor, debriyaj kaçırıyor, ses geliyor. Teşhis için arayın: 0507 921 33 88.",
+      "Muğla'da şanzıman tamiri ve debriyaj değişimi: vites geçmiyor, debriyaj kaçırıyor, ses geliyor. Ölçüm ve teşhis için hemen arayın: 0507 921 33 88.",
     h1: "Muğla'da Şanzıman ve Debriyaj İşleri",
     keyword: "muğla şanzıman tamiri",
     intro:
@@ -295,7 +295,7 @@ export const services: Service[] = [
     name: "Arıza Tespiti (Diagnostik)",
     title: "Muğla Arıza Tespiti — Diagnostik Servis",
     description:
-      "Muğla'da diagnostik arıza tespiti: motor arıza lambası, hata kodları, canlı veri analizi. Tahmin değil ölçüm. Randevu: 0507 921 33 88.",
+      "Muğla'da diagnostik arıza tespiti: motor arıza lambası, hata kodları ve canlı veri analizi. Tahmin değil ölçüm — yazılı rapor. Randevu: 0507 921 33 88.",
     h1: "Muğla'da Elektronik Arıza Tespiti ve Diagnostik",
     keyword: "muğla arıza tespiti",
     intro:
@@ -371,7 +371,7 @@ export const services: Service[] = [
     name: "Yolda Kalma Desteği",
     title: "Muğla Yolda Kalma Desteği ve Kurtarma",
     description:
-      "Muğla'da yolda mı kaldınız? Telefonla ön teşhis, çekici yönlendirmesi ve atölyede öncelikli onarım. 7 gün ulaşın: 0507 921 33 88.",
+      "Muğla'da yolda mı kaldınız? Telefonla ön teşhis, güvenilir çekici yönlendirmesi ve atölyede öncelikli onarım. 7 gün bize ulaşın: 0507 921 33 88.",
     h1: "Muğla'da Yolda Kalma Desteği ve Oto Kurtarma Yönlendirmesi",
     keyword: "muğla yolda kalma desteği",
     intro:

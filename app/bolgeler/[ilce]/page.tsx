@@ -67,7 +67,17 @@ export default async function DistrictPage({
         <h1 className="mt-1 font-display text-3xl font-bold uppercase leading-tight text-steel-100 sm:text-4xl">
           {district.h1}
         </h1>
-        <p className="mt-4 text-lg leading-relaxed text-steel-400">{district.senaryo}</p>
+        {/* Doğrudan cevap — AI/featured snippet için kim-ne-nerede */}
+        <p className="mt-4 leading-relaxed text-steel-100">
+          Gökhan Oto, {district.name} bölgesine hizmet veren, Muğla Sanayi Sitesi&apos;nde
+          (Menteşe) kurulu bir oto tamir ve bakım servisidir. {district.name}&apos;den ulaşım{" "}
+          {district.ulasim.yol} üzerinden yaklaşık {district.ulasim.sure} sürer. Telefon:{" "}
+          <a href={site.telHref} data-cta="phone" className="tabular font-semibold text-amber-500">
+            {site.phoneDisplay}
+          </a>
+          .
+        </p>
+        <p className="mt-3 text-lg leading-relaxed text-steel-400">{district.senaryo}</p>
       </header>
 
       {/* Ulaşım bloğu — gerçek yol ve süre */}

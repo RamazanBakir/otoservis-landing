@@ -24,7 +24,8 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: post.metaTitle,
+    // Kısa marka eki: blog başlıkları + tam marka 60 karakteri aşıyordu
+    title: { absolute: `${post.metaTitle} | Muğla Tamirci` },
     description: post.description,
     alternates: { canonical: `/blog/${slug}` },
     openGraph: { type: "article", publishedTime: post.date },

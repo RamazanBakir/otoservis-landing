@@ -7,15 +7,15 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileActionBar } from "@/components/MobileActionBar";
 import { WhatsAppBubble } from "@/components/WhatsAppBubble";
-import { SchemaScript } from "@/components/SchemaScript";
-import { autoRepairSchema } from "@/lib/schema";
 
 // next/font: build sırasında indirilir, self-hosted servis edilir — CDN isteği yok.
 const archivo = Archivo({
   subsets: ["latin", "latin-ext"],
   variable: "--font-archivo",
-  weight: ["600", "700"],
-  display: "swap",
+  weight: ["700"],
+  // "optional": yavaş bağlantıda fallback metriklerle kalır — font swap'ının
+  // LCP'yi geciktirmesini önler (fallback ölçüleri Next tarafından eşlenir).
+  display: "optional",
 });
 
 const inter = Inter({
@@ -62,7 +62,6 @@ export default function RootLayout({
         <Footer />
         <MobileActionBar />
         <WhatsAppBubble />
-        <SchemaScript data={autoRepairSchema()} />
 
         {GA_ID && (
           <>

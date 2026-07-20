@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { site } from "@/lib/site-config";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContactForm } from "./ContactForm";
+import { SchemaScript } from "@/components/SchemaScript";
+import { autoRepairSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "İletişim ve Yol Tarifi",
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
 export default function IletisimPage() {
   return (
     <div className="mx-auto max-w-6xl space-y-12 px-4 py-10">
+      <SchemaScript data={autoRepairSchema()} />
       <Breadcrumbs
         crumbs={[
           { name: "Ana Sayfa", href: "/" },

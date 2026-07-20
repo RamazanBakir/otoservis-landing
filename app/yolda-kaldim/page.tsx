@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/site-config";
-import { MobileActionBar } from "@/components/MobileActionBar";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection } from "@/components/FaqSection";
 import { getService } from "@/lib/services";
@@ -102,9 +101,6 @@ export default function YoldaKaldimPage() {
 
         {kurtarma && <FaqSection faqs={kurtarma.faqs} title="Yolda Kalma — Sık Sorulanlar" />}
       </div>
-
-      {/* Acil sayfada baskın aksiyon çubuğu */}
-      <MobileActionBar emphasized />
     </>
   );
 }

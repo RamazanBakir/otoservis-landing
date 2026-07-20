@@ -14,7 +14,7 @@ export function MobileMenu({ items }: { items: { href: string; label: string }[]
         aria-controls="mobil-menu"
         aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
         onClick={() => setOpen((v) => !v)}
-        className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded border border-steel-800"
+        className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded border border-steel-800"
       >
         <span
           className={`h-0.5 w-5 bg-steel-100 transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}

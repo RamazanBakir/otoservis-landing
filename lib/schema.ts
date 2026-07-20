@@ -61,7 +61,21 @@ export function serviceSchema(name: string, description: string, url: string): J
     name,
     description,
     url,
-    provider: { "@id": `${site.url}/#autorepair` },
+    provider: {
+      "@type": "AutoRepair",
+      "@id": `${site.url}/#autorepair`,
+      name: site.schemaName,
+      telephone: site.phoneE164,
+      url: site.url,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: site.address.street,
+        addressLocality: site.address.district,
+        addressRegion: site.address.city,
+        postalCode: site.address.postalCode,
+        addressCountry: site.address.country,
+      },
+    },
     areaServed: { "@type": "State", name: "Muğla" },
   };
 }
@@ -89,6 +103,7 @@ export function articleSchema(post: {
     "@type": "Article",
     headline: post.title,
     description: post.description,
+    image: `${site.url}/opengraph-image`,
     datePublished: post.date,
     dateModified: post.date,
     mainEntityOfPage: `${site.url}/blog/${post.slug}`,
