@@ -25,8 +25,9 @@ export default function IletisimPage() {
           İletişim ve Yol Tarifi
         </h1>
         <p className="mt-3 max-w-2xl text-steel-400">
-          En hızlı yol telefon: belirtiyi anlatın, gerçekçi ön değerlendirme alın. Formu
-          kullanırsanız mesai içinde geri ararız.
+          En hızlı yol telefon: belirtiyi anlatın, gerçekçi ön değerlendirme alın. Yazmayı
+          tercih ederseniz aşağıdaki formu doldurun — bilgileriniz hazır mesaj olarak
+          WhatsApp&apos;a taşınır.
         </p>
       </header>
 
@@ -90,7 +91,7 @@ export default function IletisimPage() {
 
         <section>
           <h2 className="font-display text-lg font-bold uppercase text-steel-100">
-            Yazılı ulaşın, biz arayalım
+            Formu doldurun, WhatsApp&apos;tan gönderin
           </h2>
           <div className="mt-4">
             <ContactForm />
