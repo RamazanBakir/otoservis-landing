@@ -111,7 +111,7 @@ export default function HomePage() {
           ))}
         </dl>
 
-        <div className="mt-12">
+        <div className="hero-defer mt-12">
           <ServiceLine />
         </div>
       </div>

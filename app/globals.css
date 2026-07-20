@@ -80,6 +80,14 @@ body {
     scroll-behavior: auto;
   }
 }
+/* Mobilde servis hattı animasyonunu kapat: her-kare paint LCP'yi geciktiriyor.
+   Statik gösterilir; animasyon yalnızca masaüstünde (lg+) çalışır. */
+@media (max-width: 1023px) {
+  .servis-hatti path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
 
 /* Görünür focus — erişilebilirlik */
 :focus-visible {
