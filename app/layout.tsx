@@ -13,9 +13,10 @@ const archivo = Archivo({
   subsets: ["latin", "latin-ext"],
   variable: "--font-archivo",
   weight: ["700"],
-  // "optional": yavaş bağlantıda fallback metriklerle kalır — font swap'ının
-  // LCP'yi geciktirmesini önler (fallback ölçüleri Next tarafından eşlenir).
+  // "optional": fallback ölçüleri Next tarafından eşlenir (CLS 0), yavaş
+  // bağlantıda font swap'ı LCP'yi geciktirmez.
   display: "optional",
+  adjustFontFallback: true,
 });
 
 const inter = Inter({

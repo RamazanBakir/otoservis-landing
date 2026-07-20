@@ -141,6 +141,18 @@ body {
   }
 }
 
+/* Hero teknik çizimi: mobilde ilk boyamadan çıkar (LCP korunur).
+   Masaüstünde (lg+) normal render — orada zaten yükü yok. */
+.hero-defer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
+}
+@media (min-width: 1024px) {
+  .hero-defer {
+    content-visibility: visible;
+  }
+}
+
 /* WhatsApp sohbet baloncuğu: gecikmeli belirir */
 @keyframes wa-balon-gir {
   from {

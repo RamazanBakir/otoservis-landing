@@ -93,7 +93,7 @@ export default function HomePage() {
         </div>
 
         {/* Teknik çizim: lift üzerinde araç — inline SVG, istek yok */}
-        <HeroIllustration className="mt-2 w-full max-w-md justify-self-center lg:mt-0 lg:max-w-lg" />
+        <HeroIllustration className="hero-defer mt-2 w-full max-w-md justify-self-center lg:mt-0 lg:max-w-lg" />
         </div>
 
         {/* Stat bandı — endüstriyel tabular rakamlar */}
