@@ -6,6 +6,7 @@ import { site } from "@/lib/site-config";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileActionBar } from "@/components/MobileActionBar";
+import { WhatsAppBubble } from "@/components/WhatsAppBubble";
 import { SchemaScript } from "@/components/SchemaScript";
 import { autoRepairSchema } from "@/lib/schema";
 
@@ -60,6 +61,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <MobileActionBar />
+        <WhatsAppBubble />
         <SchemaScript data={autoRepairSchema()} />
 
         {GA_ID && (

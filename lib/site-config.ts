@@ -26,17 +26,21 @@ export const site = {
     "https://wa.me/905079213388?text=" +
     encodeURIComponent("Yolda kaldım. Konumum ve aracım: "),
 
-  // {{ADRES}} — cadde/no netleşince güncelleyin
   address: {
-    street: "Muğla Sanayi Sitesi",
+    street: "Orhaniye Mah. 124. Sok. No: 33, Muğla Sanayi Sitesi",
     district: "Menteşe",
     city: "Muğla",
     postalCode: "48000",
     country: "TR",
   },
-  addressFull: "Muğla Sanayi Sitesi, Menteşe / Muğla",
+  addressFull:
+    "Orhaniye Mah. 124. Sok. No: 33, Muğla Sanayi Sitesi, Menteşe / Muğla",
   geo: { lat: 37.2153, lng: 28.3636 },
-  mapsUrl: "https://maps.google.com/?q=Muğla+Sanayi+Sitesi+Menteşe+Muğla",
+  mapsUrl:
+    "https://maps.google.com/?q=" +
+    encodeURIComponent(
+      "Orhaniye Mahallesi 124. Sokak No:33 Muğla Sanayi Sitesi Menteşe Muğla"
+    ),
 
   // {{TECRUBE}} — geçici değer
   tecrube: "20",
