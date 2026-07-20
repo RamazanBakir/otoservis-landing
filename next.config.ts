@@ -16,11 +16,12 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Dev modda React/Turbopack eval() kullanır; prod CSP'sinde unsafe-eval YOK.
-      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com`,
+      // Cloudflare Web Analytics beacon'ı (edge tarafından enjekte edilir) izinli.
+      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://static.cloudflareinsights.com`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https://www.google-analytics.com",
       "font-src 'self'",
-      "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com",
+      "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://cloudflareinsights.com",
       "frame-src https://www.google.com",
       "base-uri 'self'",
       "form-action 'self'",
