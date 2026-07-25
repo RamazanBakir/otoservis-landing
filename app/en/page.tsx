@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/site-config";
+import { SchemaScript } from "@/components/SchemaScript";
+import { autoRepairSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +13,17 @@ export const metadata: Metadata = {
     canonical: "/en",
     languages: { tr: "/", en: "/en", "x-default": "/" },
   },
-  openGraph: { locale: "en_US" },
+  // og:image dosya konvansiyonundan gelir; locale'i İngilizce'ye çevir.
+  openGraph: {
+    locale: "en_US",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
 };
 
 export default function EnglishPage() {
   return (
     <div className="mx-auto max-w-3xl space-y-10 px-4 py-12" lang="en">
+      <SchemaScript data={autoRepairSchema()} />
       <header>
         <p className="font-display text-sm font-bold uppercase tracking-widest text-amber-500">
           Muğla Industrial Zone (Sanayi Sitesi) · Menteşe
